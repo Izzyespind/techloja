@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Techloja 2.0 (JSON) </title> 
+   <script src="https://cdn.tailwindcss.com"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">    
+
+</head>
+ <body class="bg-pink-50"
+   <header class="bg-pink-30 shadow-sm">
+   <div class="max-w-6x1 mx-auto px-6 py-5 flex justify-between items-center">
+   <h1 class="text-3xl font-bold text-pink-500">Techloja <span class="text-black">2.0</span> <span class="text-xs align-bottom text-slate-600   ">(JSON)</span></h1>
+   <button onclick="mostrarCarrinho()" class="text-pink-300 flex items-center text-2xl md:hidden focus:outline-none">
+     <i class="fas fa-shopping-cart"></i>
+            <span id="contadorCarrinho" class="ml-1 text-sm bg-pink-500 text-white rounded-full px-2 py-0.5">0</span>
+   </button>
+   </div>
+    </header>
+    <main class="max-w-6x1 mx-auto px-6 py-8">
+    <input id="busca" type="text" placeholder="Buscar produtos..." class="w-full mb-6 px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-400">
+    <div id="produtosContainer" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+ 
+          <input
+    id="busca"
+    type="text"
+    placeholder="Buscar produtos..."
+    onkeyup="filtrarProdutos('todos')"
+    class="w-full mb-6 px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-400">
+   <div id="carrinhoModal" class="fixed top-0 right-0 w-full md:w-1/3 h-full bg-white shadow-lg transform translate-x-full transition-transform duration-300">
+  <div class="p-6">
+    <h2 class="text-2xl font-bold mb-4">Carrinho de Compras</h2>
+
+    <div id="carrinhoContainer" class="mb-4"></div>
+
+    <div id="totalContainer" class="font-bold mb-4">
+      Total: R$ 0,00
+    </div>
+
+    <button onclick="fecharCarrinho()" class="bg-pink-500 text-white px-4 py-2 rounded hover:bg-pink-600">
+      Fechar
+    </button>
+  </div>
+</div>
+
+    <div id="product-grid" class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
+
+    </div>
+<main>
+    <div id="modalCarrinhoOverlay" onclick="if (event.target.id === 'modal-carrinho') fecharCarrinho()"></div>
+       <div class="hidden fixed inset-0 bg-black bg-opacity-50 ..."></div>
+        <div onclick="event.stopImmediatePropagation()" class="bg-white p-6 rounded-lg shadow-lg w-96">
+            <div class="flex justify-between items-center mb-4">
+                <h2 class="text-2xl font-bold">Carrinho de Compras</h2>
+                <button onclick="fecharCarrinho()" class="text-gray-500 hover:text-gray-700 focus:outline-none">
+                    <i class="fas fa-times"></i>
+                </button>
+                <div>
+                    <div id="carrinho-itens" class="mb-4"></div>
+                    <div class="flex justify-between items-center">
+                        <span class="font-bold">Total:</span>
+                        <span id="carrinho-total" class="font-bold">R$ 0,00</span>
+                </div>
+                <button onclick="finalizarCompra()" class="mt-4 bg-pink-500 text-white px-4 py-2 rounded hover:bg-pink-600 focus:outline-none w-full">
+                <class="mt-4 w-full bg-pink-300 text-black py-4 rounded-3x1 font-semibold"></i>
+                    Finalizar Compra
+            
+                </button>
+            </div>
+        </div>
+    </div>
+</main>
+    <script src="script.js"></script>
