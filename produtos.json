@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "nome": "Notebook rosa",
+        "preco": 6742.90,
+        "categoria": "computador",
+        "imagem": "https://i.pinimg.com/736x/80/8c/7c/808c7cf59f7c985f9b8fa27871e729f2.jpg",
+        "estoque": 15,
+        "descricao": "Computador rosa e bonitinho."
+    },
+    {
+        "id": 2,
+        "nome": "mouse sem fio",
+        "preco": 78.00,
+        "categoria": "acessorios",
+        "imagem": "https://i.pinimg.com/736x/e0/65/84/e065848899b3adffcb11e80194dd3335.jpg",
+        "estoque": 13,
+        "descricao": "mouse rosa e bonitinho da my melody."
+    },
+    {
+        "id": 3,
+        "nome": "teclado rosa",
+        "preco": 980,
+        "categoria": "acessorio",
+        "imagem": "https://i.pinimg.com/736x/57/5b/84/575b8421982817af5f39dd26cd5ddd41.jpg",
+        "estoque": 19,
+        "descricao": "teclado bonitinho de gatinho"
+    },
+    {
+        "id": 4,
+        "nome": "kit solar power bank",
+        "preco": 140.00,
+        "categoria": "acessorio",
+        "imagem": "https://i.pinimg.com/736x/c3/60/e4/c360e44f0ece08cc2821abd788d7d056.jpg",
+        "estoque": 32,
+        "descricao": "Power bank hello kitty"
+    }
+]
